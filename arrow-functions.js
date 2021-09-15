@@ -5,18 +5,18 @@ function over30Under80(val) {
     return val > 30 && val < 80;
 }
 
-const opt1 = val.filter(over30Under80);
+const opt1 = arr.filter(over30Under80);
 
 // Option 2 - anonymous function
-const opt2 = val.filter(function (val) {
+const opt2 = arr.filter(function (val) {
     return val > 30 && val < 80;
-})
+});
 
 // Option 3 - arrow function (1 line)
-const opt3 = val.filter(val => val > 30 && val < 80);
+const opt3 = arr.filter(val => val > 30 && val < 80);
 
 // Option 4 - arrow function (multi-line)
-const opt4 = val.filter(val => {
+const opt4 = arr.filter(val => {
     console.log(val);
     return val > 30 && val < 80;
 });
